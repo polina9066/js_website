@@ -1,0 +1,146 @@
+/* Сброс стилей по умолчанию */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Основные стили */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #b7c4ff 0%, #dfc2fc 100%);
+    min-height: 100vh;
+}
+/* Заголовок */
+header {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #5774a7;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+/* Навигация */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6d83a8;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    background: rgba(3, 17, 82, 0.1);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #92a3ee;
+    color: white;
+}
+/* Основной контент */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Секции */
+section {
+    background: rgba(255, 255, 255, 0.95);
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+}
+/* Кнопки */
+button {
+    background: linear-gradient(135deg, #a2afeb, #b68edf);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(169, 184, 250, 0.4);
+}
+/* Форма */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form div {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    border-color: #94a5f3;
+    outline: none;
+}
+/* Список навыков */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    background: rgba(171, 185, 245, 0.1);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    background: rgba(63, 11, 131, 0.2);
+    transform: translateX(10px);
+}
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+    animation: fadeIn 0.6s ease;
+}
+
+/* Анимация для новых элементов */
+.new-item {
+    animation: fadeIn 0.5s ease;
+}
+
+/*Подвал*/
+footer{
+    text-align: center;
+}

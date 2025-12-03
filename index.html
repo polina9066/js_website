@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя первая веб-страница</title>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать на мою веб-страницу!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="script.js"></script>
+</body>
+<main>
+    <section id="home">
+        <h2>Привет, мир!</h2>
+        <p>Это моя первая веб-страница, созданная с помощью HTML.</p>
+        <button id="changeColorBtn">Изменить цвет фона</button>
+    </section>
+
+    <section>
+        <h2>Счетчик</h2>
+        <p>Значение: <span id="counter">0</span></p>
+        <button id="incrementBtn">+</button>
+        <button id="decrementBtn">-</button>
+        <button id="resetBtn">Сброс</button>
+    </section>
+
+    <section>
+    <h2>Форма обратной связи</h2>
+    <form id="contactForm">
+        <div>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Отправить</button>
+    </form>
+</section>
+
+<section>
+    <h2>Мои навыки</h2>
+    <ul id="skillsList">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <button id="addSkillBtn">Добавить навык</button>
+</section>
+</main>
+<footer>
+    <p>© 2024 Моя первая веб-страница. Создано с ❤️</p>
+</footer>
+</html>
